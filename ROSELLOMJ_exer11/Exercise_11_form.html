@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Meal planner</title>
+</head>
+<body>
+<script src="scr/script.js"> </script>
+<form id="bodyform" onsubmit="warn()">
+
+	<h2>Meal planner</h2>
+
+	<h3>Dietary restriction:</h3>
+
+	<input type="radio" id="none"  name="restriction" value='none' required onclick="undisable()"> <label for="none"> None </label>
+	<br/>
+	<input type="radio" id="vege"  name="restriction" value='vegetable' onclick="meat()"> <label for="vege">Vegetarian</label>
+	<br/>
+	<input type="radio" id="low_carb"  name="restriction" value='low-carb' onclick="undisable()"><label for="low_carb">Low Carb</label>
+	<br />
+
+	<h3>Food Items:</h3>
+		<input type="checkbox" id="rice" name="food" class="carbs"> <label for="rice">Plain Rice </label>
+		<br />
+		<input type="checkbox" id="potato" name="food" class="carbs" > <label for="potato">Baked Potato</label>
+		<br />
+		<input type="checkbox" id="bread" name="food" class="carbs" ><label for="bread">Toasted Bread</label>
+		<br />
+		<input type="checkbox" id="chicken" name="food" class="meat" ><label for="chicken">Grilled Chicken</label>
+		<br />
+		<input type="checkbox" id="pork" name="food" class="meat"><label for="pork">Braised Pork</label>
+		<br />
+		<input type="checkbox" id="beef" name="food" class="meat" ><label for="beef">Roast Beef</label>
+		<br />
+		<input type="checkbox" id="slowbeans" name="food" class="protein" ><label for="slowbeans">Slow-cooked beans</label>
+		<br />
+		<input type="checkbox" id="turnips" name="food" class="veggie"><label for="turnips">Poached turnips</label>
+		<br />
+		<input type="checkbox" id="carrots" name="food" class="veggie" ><label for="carrots">Glazed carrots</label>
+		<br />
+		<input type="checkbox" id="broccoli" name="food" class="veggie" ><label for="broccoli">Roasted Broccoli</label>
+		<br />
+		<input type="checkbox" id="steamedbeans" name="food" class="protein" ><label for="steamedbeans">Steamed Beans</label>
+	<br />
+	<br />
+	<input type="submit" id="button" class="button"> 
+
+
+</form>
+</body>
+</html>
